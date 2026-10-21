@@ -1,0 +1,6 @@
+{
+  "name": "Sinau Aksara Jawa SD",
+  "description": "Aplikasi game interaktif edukatif belajar Aksara Jawa Kelas 5 SD mencakup Aksara Nglegena, Sandhangan Swara, dan Sandhangan Panyigeg dengan kuis bertingkat dan sertifikat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
