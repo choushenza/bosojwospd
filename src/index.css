@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Hanacaraka';
+  src: url('/fonts/TuladhaJejegOT-Regular.woff2') format('woff2'),
+       url('/fonts/TuladhaJejegOT-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tuladha Jejeg';
+  src: url('/fonts/TuladhaJejegOT-Regular.woff2') format('woff2'),
+       url('/fonts/TuladhaJejegOT-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-javanese: 'Hanacaraka', 'Tuladha Jejeg', 'Noto Sans Javanese', 'Segoe UI Historic', serif;
+  --font-display: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-jawa {
+  font-family: var(--font-jawa-custom, 'Hanacaraka', 'Tuladha Jejeg', 'Noto Sans Javanese', 'Segoe UI Historic', serif);
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+}
+
+.font-jawa-klasik {
+  font-family: 'Hanacaraka', 'Tuladha Jejeg', serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+}
+
+.font-jawa-modern {
+  font-family: 'Noto Sans Javanese', 'Segoe UI Historic', sans-serif;
+}
+
+.font-child {
+  font-family: 'Fredoka', 'Plus Jakarta Sans', sans-serif;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.animate-shake {
+  animation: shake 0.45s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 0.4; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite ease-in-out;
+}
+
